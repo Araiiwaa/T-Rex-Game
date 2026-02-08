@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Retro+Computer&display=swap');
+
+body {
+  font-family: 'Retro Computer', monospace;
+  background: #f8f4f1;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #322e20;
+}
+
+.game-wrapper {
+  background: #4a3728;
+  border: 4px solid #caa11a;
+  padding: 20px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 15px;
+}
+
+.game-header h1 {
+  font-size: 1.5em;
+  color: #d4af37;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.instructions {
+  font-size: 0.6em;
+  color: #fffffe;
+  line-height: 1.4;
+}
+
+.instructions .key {
+  display: inline-block;
+  background: #ecc953;
+  color: #3d2817;
+  padding: 2px 4px;
+  font-weight: bold;
+  margin: 0 2px;
+  font-size: 1em;
+  border: 1px solid #d4af37;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  border: 3px solid #a7873d;
+  overflow: hidden;
+  background: #2d1f12;
+}
+
+#game {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  background: #fffbf7;
+}
+
+.game-info {
+  text-align: center;
+  margin-top: 15px;
+  color: #eeeeee;
+  font-size: 0.6em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .game-wrapper {
+    padding: 15px;
+  }
+
+  .game-header h1 {
+    font-size: 1.2em;
+  }
+
+  .instructions {
+    font-size: 0.5em;
+  }
+
+  .instructions .key {
+    padding: 2px 4px;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-wrapper {
+    padding: 10px;
+  }
+
+  .game-header h1 {
+    font-size: 1em;
+  }
+
+  .instructions {
+    font-size: 0.45em;
+  }
+
+  .instructions .key {
+    padding: 1px 3px;
+    font-size: 0.7em;
+  }
+}
+
+/* Pixel font fallback */
+@font-face {
+  font-family: 'PressStart2P';
+  src: url('https://fonts.googleapis.com/css2?family=Press+Start+2P');
+}
